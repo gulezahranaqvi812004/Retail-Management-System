@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C669964F-AA9A-41EE-B374-35BA0B33C9C2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BusinessApplication</RootNamespace>
+    <AssemblyName>BusinessApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminGUI\AddDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGUI\AddDevice.Designer.cs">
+      <DependentUpon>AddDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGUI\AddEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGUI\AddEmp.Designer.cs">
+      <DependentUpon>AddEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGUI\AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGUI\AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGUI\another.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGUI\another.Designer.cs">
+      <DependentUpon>another.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGUI\UpdateStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGUI\UpdateStock.Designer.cs">
+      <DependentUpon>UpdateStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BL\AdminBL.cs" />
+    <Compile Include="BL\Customer.cs" />
+    <Compile Include="BL\Employee.cs" />
+    <Compile Include="BL\Items.cs" />
+    <Compile Include="BL\Person.cs" />
+    <Compile Include="AdminGUI\delEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGUI\delEmp.Designer.cs">
+      <DependentUpon>delEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGUI\DeleteDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGUI\DeleteDevice.Designer.cs">
+      <DependentUpon>DeleteDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerGUI\changeName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerGUI\changeName.Designer.cs">
+      <DependentUpon>changeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerGUI\changePin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerGUI\changePin.Designer.cs">
+      <DependentUpon>changePin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerGUI\CustomerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerGUI\CustomerMenu.Designer.cs">
+      <DependentUpon>CustomerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerGUI\generateBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerGUI\generateBill.Designer.cs">
+      <DependentUpon>generateBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DL\ItemsDL.cs" />
+    <Compile Include="DL\PersonDL.cs" />
+    <Compile Include="CustomerGUI\isAvailable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerGUI\isAvailable.Designer.cs">
+      <DependentUpon>isAvailable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CustomerGUI\purchaseDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerGUI\purchaseDevice.Designer.cs">
+      <DependentUpon>purchaseDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignInSignUpDesktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignInSignUpDesktop.Designer.cs">
+      <DependentUpon>SignInSignUpDesktop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AdminUI.cs" />
+    <Compile Include="UI\CustomerUI.cs" />
+    <Compile Include="UI\ItemsUI.cs" />
+    <Compile Include="UI\PersonUI.cs" />
+    <Compile Include="UI\SystemUI.cs" />
+    <Compile Include="AdminGUI\updateSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGUI\updateSalary.Designer.cs">
+      <DependentUpon>updateSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGUI\ViewDevices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGUI\ViewDevices.Designer.cs">
+      <DependentUpon>ViewDevices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminGUI\ViewEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGUI\ViewEmp.Designer.cs">
+      <DependentUpon>ViewEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerGUI\ViewMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerGUI\ViewMenu.Designer.cs">
+      <DependentUpon>ViewMenu.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AdminGUI\App.config" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdminGUI\AddDevice.resx">
+      <DependentUpon>AddDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGUI\AddEmp.resx">
+      <DependentUpon>AddEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGUI\AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGUI\another.resx">
+      <DependentUpon>another.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGUI\delEmp.resx">
+      <DependentUpon>delEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGUI\DeleteDevice.resx">
+      <DependentUpon>DeleteDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGUI\UpdateStock.resx">
+      <DependentUpon>UpdateStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerGUI\changeName.resx">
+      <DependentUpon>changeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerGUI\changePin.resx">
+      <DependentUpon>changePin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerGUI\CustomerMenu.resx">
+      <DependentUpon>CustomerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerGUI\generateBill.resx">
+      <DependentUpon>generateBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerGUI\isAvailable.resx">
+      <DependentUpon>isAvailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerGUI\purchaseDevice.resx">
+      <DependentUpon>purchaseDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignInSignUpDesktop.resx">
+      <DependentUpon>SignInSignUpDesktop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGUI\updateSalary.resx">
+      <DependentUpon>updateSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGUI\ViewDevices.resx">
+      <DependentUpon>ViewDevices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminGUI\ViewEmp.resx">
+      <DependentUpon>ViewEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerGUI\ViewMenu.resx">
+      <DependentUpon>ViewMenu.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

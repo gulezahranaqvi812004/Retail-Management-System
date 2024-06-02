@@ -1,0 +1,4 @@
+apple,40,4000
+samsung,50,5000
+infinix,60,6000
+oppo,70,7000
